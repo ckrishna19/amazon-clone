@@ -7,10 +7,11 @@ import Header from "./components/Header";
 import Carrosuel from "./components/Carrosuel";
 import Horizantal from "./components/Horizantal";
 import MobHeader from "./components/MobHeader";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
 	return (
-		<div>
+		<BrowserRouter>
 			<Header />
 			<MobHeader />
 			<Carrosuel />
@@ -47,7 +48,7 @@ function App() {
 			</div>
 			<div className="bg-gray-800 h-96 border-b border-gray-600">bottom</div>
 			<div className="bg-gray-900 h-96">footer</div>
-		</div>
+		</BrowserRouter>
 	);
 }
 
